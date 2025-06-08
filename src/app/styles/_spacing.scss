@@ -1,0 +1,6 @@
+@use 'variables' as vars;
+
+@mixin horizontal-spacing(){
+    padding-left: vars.$content-margin;
+    padding-right: vars.$content-margin;
+}

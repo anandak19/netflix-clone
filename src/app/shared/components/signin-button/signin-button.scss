@@ -1,0 +1,14 @@
+@import "../../../styles/variables";
+
+.signin-btn {
+  background-color: $secondary-color;
+  padding: 0.4rem 1.8rem;
+  color: $white;
+  border: 1px solid $secondary-color;
+  font-weight: 700;
+  border-radius: 7px;
+  cursor: pointer;
+  &:hover{
+    background-color: $secondary-color-hover;
+  }
+}

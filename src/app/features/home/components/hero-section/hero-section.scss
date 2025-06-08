@@ -1,0 +1,52 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/spacing";
+
+.hero-section {
+  height: 100vh;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.808), rgba(0, 0, 0, 0.808)),
+    url("/images/header-img.jpg");
+  @include horizontal-spacing();
+
+  &__nav {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  &__logo {
+    width: 11.22rem;
+    height: 3.2rem;
+    color: $secondary-color;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__options {
+    display: flex;
+    gap: $card-gap;
+  }
+
+  &__content {
+    height: 88%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-size: 3.5rem;
+      width: 706px;
+      text-align: center;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}

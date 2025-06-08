@@ -1,0 +1,53 @@
+@use "variables" as vars;
+
+.membership {
+  &__text {
+    margin: 21px;
+    font-size: 0.9rem;
+  }
+
+  &__email-start {
+    form {
+      display: flex;
+      width: 100%;
+      gap: 8px;
+    }
+  }
+
+  &__form-group {
+    flex: 8;
+    input {
+      background-color: #000;
+      color: #fff;
+      border: 1px solid #636363;
+      padding: 0.8rem 1rem;
+      border-radius: 4px;
+      outline: none;
+      width: 100%;
+      font-size: 1rem;
+      box-sizing: border-box;
+      transition: border-color 0.3s;
+    }
+  }
+
+  &__submit-btn {
+    flex: 3;
+    button {
+      background-color: vars.$secondary-color;
+      color: #fff;
+      padding: 0.8rem 0.5rem;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      &:hover {
+        background-color: vars.$secondary-color-hover;
+      }
+    }
+  }
+
+  &__error-text {
+    color: vars.$secondary-color;
+  }
+}

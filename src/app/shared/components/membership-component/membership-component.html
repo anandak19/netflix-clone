@@ -1,0 +1,26 @@
+<div class="membership">
+  <p class="membership__text">Ready to watch? Enter your email to create or restart your membership.</p>
+  <div class="membership__email-start">
+    <form #f="ngForm" (ngSubmit)="f.valid && getStarted()">
+      <div class="membership__form-group">
+        <input
+          type="text"
+          name="email"
+          #email="ngModel"
+          [(ngModel)]="emailForm.email"
+          required
+          pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+          placeholder="Email address"
+        />
+        @if(email.invalid && email.touched){
+            <small class="membership__error-text">Email is required</small>
+        }
+      </div>
+      <div class="membership__submit-btn">
+        <button type="submit" [disabled]="f.invalid">
+          Get Started <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
