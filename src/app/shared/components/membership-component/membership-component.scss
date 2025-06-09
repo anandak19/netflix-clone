@@ -1,9 +1,11 @@
 @use "variables" as vars;
 
 .membership {
+  width: 100%;
   &__text {
     margin: 21px;
     font-size: 0.9rem;
+    text-align: center;
   }
 
   &__email-start {
@@ -15,7 +17,7 @@
   }
 
   &__form-group {
-    flex: 8;
+    flex: 7;
     input {
       background-color: #000;
       color: #fff;
@@ -39,6 +41,7 @@
       border: none;
       border-radius: 4px;
       font-size: 1rem;
+      width: 100%;
       cursor: pointer;
       transition: background-color 0.3s ease;
       &:hover {

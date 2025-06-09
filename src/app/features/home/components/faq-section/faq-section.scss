@@ -1,0 +1,40 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/spacing";
+
+.faq {
+  @include horizontal-spacing();
+
+  &__qa-wrapper {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    margin-top: 12px;
+  }
+
+  &__qa-card {
+    flex: 1;
+    p {
+      font-size: 1.3rem;
+    }
+  }
+
+  &__question {
+    background-color: #383838;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: $gray;
+    }
+  }
+
+  &__answer {
+    margin-top: 2px;
+    padding: 2rem;
+    background-color: #383838;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+  }
+
+  .answer-show {
+    display: block;
+  }
+}

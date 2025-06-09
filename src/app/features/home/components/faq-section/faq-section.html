@@ -1,1 +1,20 @@
-<p>faq-section works!</p>
+<div class="faq">
+  <div class="faq__wrapper">
+    <div class="title-class">
+      <p>Frequently Asked Questions</p>
+    </div>
+    <div class="faq__qa-wrapper" *ngFor="let faq of faqs; let i = index">
+      <div class="faq__qa-card">
+        <div class="faq__question" (click)="toggleFaq(i)">
+          <p>{{ faq.question }}</p>
+        </div>
+        @if (activeIndex === i) {
+        <div class="faq__answer">
+          <p [innerHTML]="faq.answer"></p>
+        </div>
+        }
+      </div>
+
+    </div>
+  </div>
+</div>

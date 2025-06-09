@@ -1,0 +1,39 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/spacing";
+
+.reasons {
+  @include horizontal-spacing();
+
+  &__title {
+    p {
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+  }
+
+  &__reason-cards {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    height: 294px;
+  }
+
+  &__card {
+    flex: 1;
+    padding: 1.2rem;
+    border-radius: 15px;
+    color: white;
+    background: linear-gradient(to bottom right, #1a2246, #210e17);
+  }
+
+  &__card-items {
+    h3 {
+      font-size: 1.38rem;
+      font-weight: 700;
+    }
+    p {
+      margin-top: 0.6rem;
+    }
+  }
+}
