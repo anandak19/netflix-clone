@@ -1,1 +1,16 @@
-<p>trending-section works!</p>
+<div class="trending-now">
+  <div class="trending-now__title">
+    <p>Trending Now</p>
+  </div>
+  <div class="trending-now__carousal">
+    <swiper-container slides-per-view="5" speed="500" loop="false">
+      @for(movie of trendingMovies; track movie.position){
+      <swiper-slide>
+        <app-trending-card [movieData]="movie" />
+      </swiper-slide>
+      }@empty {
+      <p>Nothing to show</p>
+      }
+    </swiper-container>
+  </div>
+</div>

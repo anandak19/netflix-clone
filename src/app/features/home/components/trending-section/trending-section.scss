@@ -1,0 +1,19 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/spacing";
+
+.trending-now {
+  @include horizontal-spacing();
+  margin: 2rem 0;
+  height: fit-content;
+  &__title {
+    p {
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+  }
+
+  swiper-slide{
+    padding: 12px ;
+  }
+
+}

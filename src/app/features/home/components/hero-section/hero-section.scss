@@ -3,7 +3,7 @@
 
 .hero-section {
   height: 100vh;
-  background-image: linear-gradient(rgb(0, 0, 0, 0.808), rgba(0, 0, 0, 0.808)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.665), rgba(0, 0, 0, 0.665)),
     url("/images/header-img.jpg");
   @include horizontal-spacing();
 
